@@ -74,5 +74,8 @@ for col in num_cols:
 # Sort by Total Deaths
 df = df.sort_values(by=['Total Deaths'], ascending=False)
 
+# Printing table
+print(df)
+
 # Export to CSV
 df.to_csv('coronavirus.csv', encoding='utf-8')
